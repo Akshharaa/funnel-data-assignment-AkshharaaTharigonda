@@ -1,4 +1,4 @@
-# Funnel Data Assignment
+## Funnel Data Assignment
 
 This project analyzes events, message and orders data of devices to provide actionable insights for merchant. The analysis includes:
 
@@ -6,8 +6,6 @@ This project analyzes events, message and orders data of devices to provide acti
 - Intent distribution: percentage share of `detected_intent`, highlighting top 2 intents correlated with purchases.
 - Order cancellation SLA compliance: checking violations against a 60-minute cancellation policy.
 - Charts and JSON reports for visualization and further analysis.
-
----
 
 ### Folder Structure
 
@@ -32,15 +30,13 @@ README.md
 - `/out` : Contains the Generated JSON report and charts
 - `INSIGHTS.md` : Provides insights and key takeaways
 
----
 
 ### Setup & Dependencies
 
 1. Clone or download the repository
-   * ```bash
-    git clone link
-    cd folder name
-     ```
+   ```bash
+    git clone https://github.com/Akshharaa/funnel-data-assignment-AkshharaaTharigonda.git
+    cd funnel-data-assignment-AkshharaaTharigonda ```
 2. Install the required packages: `pip install pandas matplotlib seaborn plotly`
 
 ### How to Run:
