@@ -35,14 +35,17 @@ README.md
 
 1. Clone or download the repository
    ```bash
-    git clone https://github.com/Akshharaa/funnel-data-assignment-AkshharaaTharigonda.git
-    cd funnel-data-assignment-AkshharaaTharigonda ```
+    git clone https://github.com/Akshharaa/funnel-data-assignment-AkshharaaTharigonda.git```
+    ```bash
+   cd funnel-data-assignment-AkshharaaTharigonda```
 2. Install the required packages: `pip install pandas matplotlib seaborn plotly`
 
 ### How to Run:
 
 1. Ussing CLI, execute evo_report.py to generate JSON report, funnel.png and intent.png charts
-    * Run `python src/evo_report.py --events data/events.csv --messages data/messages.csv --orders data/orders.csv --out ./out/`
+    * Run
+      ```bash
+      python src/evo_report.py --events data/events.csv --messages data/messages.csv --orders data/orders.csv --out ./out/ ```
 
 ### Output:
 
