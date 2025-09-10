@@ -9,7 +9,7 @@ This project analyzes events, message and orders data of devices to provide acti
 
 ---
 
-## Folder Structure
+### Folder Structure
 
 ```bash
 /sql
@@ -24,6 +24,7 @@ This project analyzes events, message and orders data of devices to provide acti
   intents.png
 INSIGHTS.md
 README.md
+```
 
 - `/data` : Contains data files (events.scv, messages.csv, orders.csv, inventory.csv, products.csv)
 - `/sql` : Contains the SQL queries for the given tasks.
@@ -31,12 +32,15 @@ README.md
 - `/out` : Contains the Generated JSON report and charts
 - `INSIGHTS.md` : Provides insights and key takeaways
 
+---
+
 ### Setup & Dependencies
 
 1. Clone or download the repository
    * ```bash
-  git clone link
-  cd folder name
+    git clone link
+    cd folder name
+     ```
 2. Install the required packages: `pip install pandas matplotlib seaborn plotly`
 
 ### How to Run:
@@ -45,6 +49,7 @@ README.md
     * Run `python src/evo_report.py --events data/events.csv --messages data/messages.csv --orders data/orders.csv --out ./out/`
 
 ### Output:
+
 The out folder contains:
 * JSON report: It includes Funnel conversion by step conversion, Intent Distribution and top 2 purchse intents and Cancellation Check details.
 * funnel.png: Funnel conversion by device
