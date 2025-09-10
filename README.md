@@ -11,6 +11,7 @@ This project analyzes events, message and orders data of devices to provide acti
 
 ## Folder Structure
 
+```bash
 /sql
   funnel.sql
   intent_distribution.sql
@@ -22,28 +23,28 @@ This project analyzes events, message and orders data of devices to provide acti
   funnel.png
   intents.png
 INSIGHTS.md
-README.md   (how to run, environment)
+README.md
 
-- '/data' : Contains data files (events.scv, messages.csv, orders.csv, inventory.csv, products.csv)
-- '/sql' : Contains the SQL queries for the given tasks.
-- '/src' : Contains pythn script evo_report.py for full data preprocessing and generating JSON and charts.
-- '/out' : Contains the Generated JSON report and charts
-- 'INSIGHTS.md' : Provides insights and key takeaways
+- `/data` : Contains data files (events.scv, messages.csv, orders.csv, inventory.csv, products.csv)
+- `/sql` : Contains the SQL queries for the given tasks.
+- `/src` : Contains pythn script evo_report.py for full data preprocessing and generating JSON and charts.
+- `/out` : Contains the Generated JSON report and charts
+- `INSIGHTS.md` : Provides insights and key takeaways
 
-## Setup & Dependencies
+### Setup & Dependencies
 
 1. Clone or download the repository
-   * '''bash
+   * ```bash
   git clone link
   cd folder name
-2. Install the required packages: pip install pandas matplotlib seaborn plotly
+2. Install the required packages: `pip install pandas matplotlib seaborn plotly`
 
-## Execution & Output:
+### How to Run:
 
 1. Ussing CLI, execute evo_report.py to generate JSON report, funnel.png and intent.png charts
-    * Run 'python src/evo_report.py --events data/events.csv --messages data/messages.csv --orders data/orders.csv --out ./out/'
+    * Run `python src/evo_report.py --events data/events.csv --messages data/messages.csv --orders data/orders.csv --out ./out/`
 
-Output:
+### Output:
 The out folder contains:
 * JSON report: It includes Funnel conversion by step conversion, Intent Distribution and top 2 purchse intents and Cancellation Check details.
 * funnel.png: Funnel conversion by device
